@@ -1,0 +1,11 @@
+include: package:effective_dart/analysis_options.yaml # https://pub.dartlang.org/packages/effective_dart
+#analyzer:
+#  exclude:
+#    - lib/i18n/l10n/**
+linter: # Lint rules: http://dart-lang.github.io/linter/lints/
+  rules:
+    public_member_api_docs: false # http://dart-lang.github.io/linter/lints/public_member_api_docs.html
+    lines_longer_than_80_chars: false # http://dart-lang.github.io/linter/lints/lines_longer_than_80_chars.html
+
+# I've changes this to ignore these rules because they were not checked by the analyzer and the code
+# doesn't respect these rules.
