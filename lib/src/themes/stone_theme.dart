@@ -16,6 +16,7 @@ final ThemeData lightTheme = ThemeData(
   scaffoldBackgroundColor: _colorPaletteLight.background(),
   unselectedWidgetColor: _colorPaletteLight.primary(),
   primaryColorBrightness: Brightness.light,
+  fontFamily: 'stone',
 );
 
 final ThemeData darkTheme = ThemeData(
@@ -29,4 +30,5 @@ final ThemeData darkTheme = ThemeData(
   scaffoldBackgroundColor: _colorPaletteDark.background(),
   unselectedWidgetColor: _colorPaletteDark.primary(),
   primaryColorBrightness: Brightness.dark,
+  fontFamily: 'stone',
 );
