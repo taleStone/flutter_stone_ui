@@ -5,7 +5,8 @@ import 'bloc.dart';
 
 class StoneThemeBloc extends Bloc<StoneThemeEvent, StoneThemeState> {
   StoneThemeBloc({@required StoneTheme theme})
-      : super(StoneThemeState.initial(theme));
+      : assert(theme != null),
+        super(StoneThemeState.initial(theme));
 
   @override
   Stream<StoneThemeState> mapEventToState(StoneThemeEvent event) async* {
