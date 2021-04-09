@@ -1,10 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter/material.dart';
 
 import 'bloc.dart';
 
 class StoneThemeBloc extends Bloc<StoneThemeEvent, StoneThemeState> {
-  StoneThemeBloc({@required StoneTheme theme})
+  StoneThemeBloc({StoneTheme theme = StoneTheme.system})
       : assert(theme != null),
         super(StoneThemeState.initial(theme));
 

@@ -8,13 +8,13 @@ import 'colors.dart';
 class StoneColorsLight extends ColorPalette with EquatableMixin {
   @override
   Color primary({StoneOpacity opacity}) {
-    final color = Color(0xff1890ff);
+    final color = Color(0xff108ee9);
     return getColor(color, opacity);
   }
 
   @override
   Color primaryDark({StoneOpacity opacity}) {
-    final color = Color(0xff1890ff);
+    final color = Color(0xff0e80d2);
     return getColor(color, opacity);
   }
 
@@ -32,19 +32,19 @@ class StoneColorsLight extends ColorPalette with EquatableMixin {
 
   @override
   Color warning({StoneOpacity opacity}) {
-    final color = Color(0xfffaad14);
+    final color = Color(0xffffc600);
     return getColor(color, opacity);
   }
 
   @override
   Color success({StoneOpacity opacity}) {
-    final color = Color(0xff52c41a);
+    final color = Color(0xff6abf47);
     return getColor(color, opacity);
   }
 
   @override
   Color error({StoneOpacity opacity}) {
-    final color = Color(0xfff5222d);
+    final color = Color(0xfff4333c);
     return getColor(color, opacity);
   }
 
@@ -62,19 +62,19 @@ class StoneColorsLight extends ColorPalette with EquatableMixin {
 
   @override
   Color text({StoneOpacity opacity}) {
-    final color = Color.fromRGBO(0, 0, 0, 0.65);
+    final color = Color(0xff333333);
     return getColor(color, opacity);
   }
 
   @override
   Color textLight({StoneOpacity opacity}) {
-    final color = Color.fromRGBO(0, 0, 0, 0.45);
+    final color = Color(0xff666666);
     return getColor(color, opacity);
   }
 
   @override
   Color disable({StoneOpacity opacity}) {
-    final color = Color.fromRGBO(0, 0, 0, 0.25);
+    final color = Color(0xffdddddd);
     return getColor(color, opacity);
   }
 
@@ -86,13 +86,13 @@ class StoneColorsLight extends ColorPalette with EquatableMixin {
 
   @override
   Color critical({StoneOpacity opacity}) {
-    final color = Color(0xfff5222d);
+    final color = Color(0xffff5b05);
     return getColor(color, opacity);
   }
 
   @override
   Color surfaceElevation({StoneOpacity opacity}) {
-    final color = Color(0xffffffff);
+    final color = Color(0xfff5f5f9);
     return getColor(color, opacity);
   }
 
