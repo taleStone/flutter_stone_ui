@@ -9,13 +9,13 @@ import 'colors.dart';
 class StoneColorsDark extends ColorPalette with EquatableMixin {
   @override
   Color primary({StoneOpacity opacity}) {
-    final color = Color(0xff1890ff);
+    final color = Color(0xff108ee9);
     return getColor(color, opacity);
   }
 
   @override
   Color primaryDark({StoneOpacity opacity}) {
-    final color = Color(0xff1890ff);
+    final color = Color(0xff0e80d2);
     return getColor(color, opacity);
   }
 
@@ -33,19 +33,19 @@ class StoneColorsDark extends ColorPalette with EquatableMixin {
 
   @override
   Color warning({StoneOpacity opacity}) {
-    final color = Color(0xfffaad14);
+    final color = Color(0xffffc600);
     return getColor(color, opacity);
   }
 
   @override
   Color success({StoneOpacity opacity}) {
-    final color = Color(0xff52c41a);
+    final color = Color(0xff6abf47);
     return getColor(color, opacity);
   }
 
   @override
   Color error({StoneOpacity opacity}) {
-    final color = Color(0xfff5222d);
+    final color = Color(0xfff4333c);
     return getColor(color, opacity);
   }
 
@@ -87,7 +87,7 @@ class StoneColorsDark extends ColorPalette with EquatableMixin {
 
   @override
   Color critical({StoneOpacity opacity}) {
-    final color = Color(0xfff5222d);
+    final color = Color(0xffff5b05);
     return getColor(color, opacity);
   }
 

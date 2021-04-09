@@ -6,6 +6,7 @@ import '../../../flutter_stone_ui.dart';
 enum StoneTheme {
   stoneThemeLight,
   stoneThemeDark,
+  system,
 }
 
 class StoneThemeState extends Equatable {
@@ -16,16 +17,20 @@ class StoneThemeState extends Equatable {
 
   const StoneThemeState._create({
     @required this.theme,
-    @required this.themeData,
-    @required this.textTheme,
-    @required this.colorPalette,
+    this.themeData,
+    this.textTheme,
+    this.colorPalette,
   });
 
   factory StoneThemeState.initial(StoneTheme theme) {
-    if (theme == StoneTheme.stoneThemeDark) {
-      return StoneThemeState.applyDarkTheme();
+    switch (theme) {
+      case StoneTheme.system:
+        return StoneThemeState._create(theme: theme);
+      case StoneTheme.stoneThemeDark:
+        return StoneThemeState.applyDarkTheme();
+      default:
+        return StoneThemeState.applyLightTheme();
     }
-    return StoneThemeState.applyLightTheme();
   }
 
   factory StoneThemeState.applyDarkTheme() {
